@@ -218,8 +218,8 @@ function startTimer() {
 function endQuiz() {
   document.getElementById("question-text").innerHTML = "Quiz Completed!";
   document.getElementById("answer-buttons").innerHTML = "";
+  document.getElementById("timer-text").innerHTML = "";
   let percentage = Math.round((score / numQuestions) * 100);
-  //   console.log(percentage);
   document.getElementById("question-container").innerHTML =
     "You Score :" +
     score +
